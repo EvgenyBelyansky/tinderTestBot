@@ -22,6 +22,25 @@ public class TinderBoltApp extends MultiSessionTelegramBot {
 
     @Override
     public void onUpdateEventReceived(Update update) {
+        String message = getMessageText();
+
+        if (message.equals("/start")) {
+            sendPhotoMessage("main");
+            String text = loadMessage("main");
+            sendTextMessage(text);
+            return;
+        }
+
+        sendTextMessage("*Привет*");
+        sendTextMessage("_Привет_");
+
+        sendTextMessage(String.format("Вы написали: >%s<", message));
+
+        sendTextButtonsMessage("Выберите режим работы: ",
+                "Старт", "start",
+                "Стоп", "stop");
+
+
         //TODO: основной функционал бота будем писать здесь
 
     }
