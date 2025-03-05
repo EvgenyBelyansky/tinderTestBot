@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class TinderBoltApp extends MultiSessionTelegramBot {
     public static final String TELEGRAM_BOT_NAME = "TinderTestJRBot"; //TODO: добавь имя бота в кавычках
-    public static final String TELEGRAM_BOT_TOKEN = "7606902099:AAGbhz7Tm3mEwMMGNbb55ZBx2LPpBcOXC4c"; //TODO: добавь токен бота в кавычках
+    public static final String TELEGRAM_BOT_TOKEN = ""; //TODO: добавь токен бота в кавычках
     public static final String OPEN_AI_TOKEN = "chat-gpt-token"; //TODO: добавь токен ChatGPT в кавычках
 
     public TinderBoltApp() {
